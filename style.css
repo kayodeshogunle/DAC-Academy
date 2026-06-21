@@ -1,87 +1,185 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
-    min-width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom right, rgb(4, 0, 44), rgb(0, 0, 255),  rgb(0, 0, 57) );
-    background-repeat: no-repeat;
-    background-position: left;
+    background-color: #2a2af9;
+    overflow: hidden;
 }
 .content {
     position: relative;
-    top: 20px;
-    left: 0;
-    animation: calcul 3s ease-in-out normal;
+    left: 2%;
+    top: 14px;
 }
-@keyframes calcul {
-    from{
-        opacity: 0;
-        scale: 0.5;
+.box {
+    width: 160px;
+    height: 160px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    position: relative;
+    left: 300px;
+    top: 70px;
+    box-shadow: 1px 1px 9px #fef100;
+    overflow: hidden;
+    animation-name: c;
+    animation-duration: 2s;
+}
+@keyframes c {
+    10% {
+        margin-left: 220px;
+        position: relative;
     }
+}
+.u {
+     animation-name: u;
+    animation-duration: 3s;
+    position: absolute;
+    top: 40%;
+}
+@keyframes u {
+   10% {
+    margin-top: -800px;
+   }
+}
+hr {
+    width: 119px;
+    height: 3px;
+    border-radius: 10px;
+    outline: none;
+    position: absolute;
+    left: 427px;
+    top: 90%;
+    transform: rotate(90deg);
+    background-color: #fff;
+    border: none;
+}
+.name {
+    position: relative;
+    left: 515px;
+    top: 99px;
+}
+.Profile {
+    position: relative;
+    left: -60px;
+    top: 80px;
+}
+h1 {
+    color: #ffffff;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: -6%;
+    font-size: 40px;
+    position: relative;
+    font-weight: 500;
+    left: -10px;
+    top: -9px;
+    animation-name: one;
+    animation-duration: 3s;
+}
+@keyframes one {
+    10% {
+          margin-top: -400px;
+          position: relative;
+    }
+}
+span {
+    font-weight: 800;
+    color: #fef100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+     'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 15px;
+     letter-spacing: 8%;
+     font-weight: 100;
+     position: relative;
+     top: -39px;
+     left: -7px;
+     animation-name: three;
+     animation-duration: 3s;
+}
+@keyframes three {
+    10% {
+        margin-left: 700px;
+        position: relative;
+    }
+}
+.name {
+    position: relative;
+    top: -96px;
 }
 button {
-    width: 70px;
-    height: 50px;
-    margin: 5px;
-    border: none;
+    width: 200px;
+    height: 35px;
+    background-color: #fef100;
+    color: black;
     border-radius: 5px;
-    background: transparent;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
-    'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-    box-shadow: 0px 0px 3px #ffffffd1;
-    cursor: pointer;
+    border: none;
+    position: relative;
+    top: -46px;
+    left: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+     'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 14px;
+     font-weight: 500;
+     letter-spacing: -5%;
+     transition: 2s;
+     animation-name: button;
+     animation-duration: 3s;
+}
+@keyframes button {
+    5% {
+        position: relative;
+        top: 800px;
+    }
 }
 button:hover {
-    background-color: rgb(40, 40, 236);
+    background-color: rgb(255, 255, 255, 0.027);
+    backdrop-filter: blur(8px);
+    border: 1px solid #fef100;
+    color: #fef100;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.089);
+    cursor: pointer;
 }
-@keyframes color {
-    50% {
-        background-color: rgb(0, 0, 149);
-    }
-    60% {
-        background-color: rgb(0, 0, 79);
-    }
-}
-.equalBtn {
-    color: #fff;
-   background-color: #f40d;
-}
-.equalBtn:hover {
-    background-color: #f40d;
-}
-input {
-    width: 326px;
-    height: 70px;
+img {
+    width: 230px;
     position: relative;
-    top: -7px;
-    left: 1px;
-    background: transparent;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 0px 4px #ffffff;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
-    'Lucida Sans', Arial, sans-serif;
-    text-align: right;
-    font-size: 30px;
-    color: #fff;
+    left: -60px;
+    top: -1px;
 }
-input::placeholder {
-    color: #fff;
+.circle {
     position: relative;
-    left: -10px;
+    display: block;
 }
-.operator {
-    color: rgb(255, 251, 0);
+.first-circle {
+    width: 600px;
+    height: 600px;
+    background-color: #4a4aff;
+    border-radius: 500px;
+    position: relative;
+    left: -20%;
+    top: -70px;
+    animation-name: first;
+    animation-duration: 3s;
 }
-.operator:hover  {
-     animation: color 3s ease-in-out infinite normal;
+@keyframes first {
+    10% {
+        position: relative;
+        top: 700px;
+    }
+}
+.second-circle {
+    width: 500px;
+    height: 500px;
+    background-color: #7171fe97;
+    position: relative;
+    top: -600px;
+    left: -179px;
+    border-radius: 900px;
+    animation-name: second;
+    animation-duration: 3.3s;
+}
+@keyframes second {
+    10% {
+        position: relative;
+        top: 600px;
+    }
 }
